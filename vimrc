@@ -1,13 +1,10 @@
 " 2011.6.3 基本设置
 let mapleader = "e"
 
-set number showcmd ruler nobackup
+set number showcmd ruler nobackup fileencodings=utf-8,gbk
 set autoindent expandtab tabstop=4 shiftwidth=4
 set ignorecase hlsearch incsearch
-set fileencodings=utf-8,gbk
-
 filetype plugin on | syntax on | color torte
-let NERDTreeShowBookmarks=1
 
 " leader 快捷键定义
 map <silent> <leader>d Oini_set('display_errors', 'On'); error_reporting(E_ALL);<ESC>
@@ -27,7 +24,7 @@ map <silent> <c-j> <c-w>j
 map <silent> <c-k> <c-w>k
 map <silent> <c-h> <c-w>h
 " 2017.3.1 vimdiff 快捷键
-map <silent> <c-g> [czz
+map <silent> <c-g> ]czz
 
 " 2014.8.21 高亮显示tab和空格
 highlight SpecialKey ctermbg=1 ctermfg=4
@@ -62,7 +59,7 @@ command! InstallVimPlug :!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https
 
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', { 'tag': '*' }
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' | let NERDTreeShowBookmarks=1
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'vim-scripts/matchit.zip'
