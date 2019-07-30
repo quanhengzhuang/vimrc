@@ -1,7 +1,7 @@
 " 2011.6.3 基本设置
 let mapleader = "e"
 
-set number showcmd ruler nobackup fileencodings=utf-8,gbk
+set number showcmd ruler nobackup fileencodings=utf-8,gbk laststatus=2
 set autoindent expandtab tabstop=4 shiftwidth=4
 set ignorecase hlsearch incsearch
 filetype plugin on | syntax on | color torte
@@ -30,11 +30,7 @@ map <silent> <c-g> ]czz
 set list listchars=tab:>-,trail:.
 
 " 2012.6.22 状态栏显示优化
-set laststatus=2
-set statusline=%F\ %1*%m%*\ %r\ %{&paste?'[PASTE]':''}
-set statusline+=%=\ (%c,\ %l,\ %p%%)
-set statusline+=\ %1*\ %L\ %*
-set statusline+=\ %{toupper(&fenc!=''?&fenc:&enc)}\ [0x%B]
+set statusline=%F\ %1*%m%*\ %r\ %{&paste?'[PASTE]':''}%=\ (%c,\ %l,\ %p%%)\ %1*\ %L\ %*\ %{toupper(&fenc!=''?&fenc:&enc)}\ [0x%B]
 
 " 2014.12.18 显示匹配数
 command! -nargs=0 Count execute ':%s///gne'
