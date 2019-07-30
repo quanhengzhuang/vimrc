@@ -27,26 +27,14 @@ map <silent> <c-h> <c-w>h
 map <silent> <c-g> ]czz
 
 " 2014.8.21 高亮显示tab和空格
-highlight SpecialKey ctermbg=1 ctermfg=4
 set list listchars=tab:>-,trail:.
 
 " 2012.6.22 状态栏显示优化
-highlight User1 ctermbg=1 ctermfg=3
-highlight User2 ctermbg=4 ctermfg=2
 set laststatus=2
 set statusline=%F\ %1*%m%*\ %r\ %{&paste?'[PASTE]':''}
 set statusline+=%=\ (%c,\ %l,\ %p%%)
 set statusline+=\ %1*\ %L\ %*
 set statusline+=\ %{toupper(&fenc!=''?&fenc:&enc)}\ [0x%B]
-
-" tab, pop, cursor 高亮颜色
-highlight TabLine term=underline cterm=bold ctermfg=9 ctermbg=4
-highlight TabLineSel term=bold cterm=bold ctermbg=Red ctermfg=yellow
-highlight Pmenu guibg=#EE0000 ctermbg=darkred
-highlight PmenuSel guibg=#660000 ctermbg=red guifg=yellow ctermfg=yellow
-highlight PmenuSbar guibg=#990000 ctermbg=red
-highlight PmenuThumb guifg=yellow ctermfg=darkred
-highlight CursorLine guibg=#2B0000 ctermbg=darkgreen
 
 " 2014.12.18 显示匹配数
 command! -nargs=0 Count execute ':%s///gne'
@@ -70,5 +58,6 @@ Plug 'quanhengzhuang/vim-findtags'
 Plug 'quanhengzhuang/vim-hiwords'
 Plug 'quanhengzhuang/vim-sudowriter'
 Plug 'quanhengzhuang/vim-autobackup'
+Plug 'quanhengzhuang/vim-ryb'
 Plug 'requestid/vim-phpcheck'
 call plug#end()
