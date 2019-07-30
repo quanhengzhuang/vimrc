@@ -1,12 +1,11 @@
 " 2011.6.3 基本设置
-let mapleader = "e"
-
 set number showcmd ruler nobackup fileencodings=utf-8,gbk laststatus=2
 set autoindent expandtab tabstop=4 shiftwidth=4
 set ignorecase hlsearch incsearch
 filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
+let mapleader = "e"
 map <silent> <leader>d Oini_set('display_errors', 'On'); error_reporting(E_ALL);<ESC>
 map <silent> <leader>i :set paste!<CR>
 map <silent> <leader>I :set list!<CR>
