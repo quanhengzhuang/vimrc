@@ -1,4 +1,4 @@
-" 2011.6.3 基本设置
+" 基本设置
 set number showcmd ruler nobackup fileencodings=utf-8,gbk laststatus=2
 set autoindent expandtab tabstop=4 shiftwidth=4
 set ignorecase hlsearch incsearch
@@ -9,35 +9,27 @@ let mapleader = "e"
 map <silent> <leader>d Oini_set('display_errors', 'On'); error_reporting(E_ALL);<ESC>
 map <silent> <leader>i :set paste!<CR>
 map <silent> <leader>I :set list!<CR>
-map <silent> <leader>N :nohlsearch<CR>
 map <silent> <leader>q :q<CR>
 map <silent> <leader>p "0p
+map <silent> <leader>s :%s///gne<CR>
+map <silent> <leader>S :nohlsearch<CR>
 map <silent> <leader>t :NERDTreeToggle<CR>
 map <silent> <leader>v :tabnew ~/.vimrc<CR>
 map <silent> <leader>w :set nowrap!<CR>
-" 2013.5.1 0替代^，空格滚屏, 快速切换窗口
 map <silent> 0 ^
 map <silent> <space> <c-e>j
 map <silent> <c-l> <c-w>l
 map <silent> <c-j> <c-w>j
 map <silent> <c-k> <c-w>k
 map <silent> <c-h> <c-w>h
-" 2017.3.1 vimdiff 快捷键
 map <silent> <c-g> ]czz
 
-" 2014.8.21 高亮显示tab和空格
+" 行尾字符、状态栏、go特殊格式
 set list listchars=tab:>-,trail:.
-
-" 2012.6.22 状态栏显示优化
 set statusline=%F\ %1*%m%*\ %r\ %{&paste?'[PASTE]':''}%=\ (%c,\ %l,\ %p%%)\ %1*\ %L\ %*\ %{toupper(&fenc!=''?&fenc:&enc)}\ [0x%B]
-
-" 2014.12.18 显示匹配数
-command! -nargs=0 Count execute ':%s///gne'
-
-" 2018.8.29 gofmt
 autocmd BufEnter *.go setlocal noexpandtab tabstop=8 shiftwidth=8 nolist
 
-" 2019.7.2 安装 vim-plug
+" 安装 vim-plug
 command! InstallVimPlug :!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin('~/.vim/plugged')
