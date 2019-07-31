@@ -33,7 +33,7 @@ autocmd BufEnter *.go setlocal noexpandtab tabstop=8 shiftwidth=8 nolist
 command! InstallVimPlug :!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go', { 'tag': '*' }
+Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'scrooloose/nerdtree' | let NERDTreeShowBookmarks=1
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/AutoComplPop'
