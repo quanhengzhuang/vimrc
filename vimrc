@@ -13,7 +13,6 @@ map <silent> <leader>q :q<CR>
 map <silent> <leader>p "0p
 map <silent> <leader>s :%s///gne<CR>
 map <silent> <leader>S :nohlsearch<CR>
-map <silent> <leader>t :NERDTreeToggle<CR>
 map <silent> <leader>v :tabnew ~/.vimrc<CR>
 map <silent> <leader>w :set nowrap!<CR>
 map <silent> 0 ^
@@ -34,7 +33,7 @@ command! InstallVimPlug :!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https
 
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'scrooloose/nerdtree' | let NERDTreeShowBookmarks=1
+Plug 'scrooloose/nerdtree' | let NERDTreeShowBookmarks=1 | map <leader>t :NERDTreeToggle<CR>
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/AutoComplPop'
 Plug 'vim-scripts/matchit.zip'
