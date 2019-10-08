@@ -6,7 +6,6 @@ filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
 let mapleader = "e"
-map <silent> <leader>d Oini_set('display_errors', 'On'); error_reporting(E_ALL);<ESC>
 map <silent> <leader>i :set paste!<CR>
 map <silent> <leader>I :set list!<CR>
 map <silent> <leader>q :q<CR>
