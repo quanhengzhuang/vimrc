@@ -16,5 +16,5 @@ curl https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/vimrc > ~/.vi
 git clone 到本地，然后软链
 ```shell
 git clone git@github.com:quanhengzhuang/vimrc.git
-cp -sf vimrc ~/.vimrc
+ln -sf vimrc ~/.vimrc
 ```
