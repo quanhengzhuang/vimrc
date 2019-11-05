@@ -1,0 +1,19 @@
+let mapleader = "e"
+
+" tab切换、关闭
+map <silent> <leader>h :tabprevious<CR>
+map <silent> <leader>l :tabnext<CR>
+map <silent> <leader>q :q<CR>
+map <silent> Q :q<CR>
+
+" 打开文件、定义跳转
+map <silent> <leader>f :action GotoFile<CR>
+map <silent> <leader>F :action FindInPath<CR>
+map <silent> <leader>e :action GotoDeclaration<CR>
+map <silent> <c-h> :action Back<CR>
+map <silent> <c-l> :action Forward<CR>
+
+" 运行、结束
+command! Res source ~/.ideavimrc
+command! Run    action Run
+command! Stop   action Stop
