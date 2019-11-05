@@ -6,11 +6,12 @@ filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
 let mapleader = "e"
+map <silent> <leader>h :tabprevious<CR>
+map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>i :set paste!<CR>
 map <silent> <leader>I :set list!<CR>
 map <silent> <leader>q :q<CR>
 map <silent> <leader>p "0p
-map <silent> <leader>s :%s///gne<CR>
 map <silent> <leader>v :tabnew ~/.vimrc<CR>
 map <silent> <leader>w :set nowrap!<CR>
 map <silent> <space> <c-e>j
