@@ -1,19 +1,31 @@
 let mapleader = "e"
 
-" tab切换、关闭
+" tab切换、关闭窗口
 map <silent> <leader>h :tabprevious<CR>
 map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>q :q<CR>
 map <silent> Q :q<CR>
 
-" 打开文件、定义跳转
+" 查找文件
 map <silent> <leader>f :action GotoFile<CR>
 map <silent> <leader>F :action FindInPath<CR>
+
+" 跳转到定义、向后跳、向前跳
 map <silent> <leader>e :action GotoDeclaration<CR>
 map <silent> <c-h> :action Back<CR>
 map <silent> <c-l> :action Forward<CR>
 
-" 运行、结束
+" 打开工具窗口、隐藏窗口
+map <silent> <leader>r :action ActivateRunToolWindow<CR>
+map <silent> <leader>s :action ActivateStructureToolWindow<CR>
+map <silent> <leader>t :action ActivateProjectToolWindow<CR>
+map <silent> <leader>n :action HideAllWindows<CR>
+map <silent> <leader>a :action HideActiveWindow<CR>
+
+" 运行、调试、停止
+command! R action Run
+command! D action Debug
+command! S action Stop
+
+" 重新加载 .ideavimrc
 command! Res source ~/.ideavimrc
-command! Run    action Run
-command! Stop   action Stop
