@@ -4,6 +4,7 @@ let mapleader = "e"
 map <silent> <leader>h :tabprevious<CR>
 map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>q :q<CR>
+map <silent> <space> <c-e>j
 map <silent> Q :q<CR>
 
 " 查找文件
@@ -28,4 +29,4 @@ command! D action Debug
 command! S action Stop
 
 " 重新加载 .ideavimrc
-command! Res source ~/.ideavimrc
+command! Re source ~/.ideavimrc
