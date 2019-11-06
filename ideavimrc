@@ -1,15 +1,19 @@
 let mapleader = "e"
 
+" 实时搜索、高亮关键词
+set ignorecase hlsearch incsearch
+
 " tab切换、关闭窗口、空格滚屏
 map <silent> <leader>h :tabprevious<CR>
 map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>q :q<CR>
 map <silent> Q :q<CR>
+map <silent> W <c-w>w
 map <silent> <space> <c-e>j
 
 " 查找文件
 map <silent> <leader>f :action GotoFile<CR>
-map <silent> <leader>F :action FindInPath<CR>
+command! F action FindInPath
 
 " 跳转到定义、向后跳、向前跳
 map <silent> <leader>e :action GotoDeclaration<CR>
@@ -23,11 +27,17 @@ map <silent> <leader>t :action ActivateProjectToolWindow<CR>
 map <silent> <leader>n :action HideAllWindows<CR>
 map <silent> <leader>a :action HideActiveWindow<CR>
 
-" 运行、调试、停止
+" 运行、调试
 command! R action Run
 command! D action Debug
 command! S action Stop
+command! B action ViewBreakpoints
 
-" 修改、重新加载 .ideavimrc
+map <silent> B :action ToggleLineBreakpoint<CR>
+map <silent> D :action StepOver<CR>
+map <silent> ei :action StepInto<CR>
+map <silent> eo :action StepOut<CR>
+
+" ideavimrc 修改、重新加载
 command! Vimrc edit ~/.ideavimrc
 command! So    source ~/.ideavimrc
