@@ -1,11 +1,11 @@
 let mapleader = "e"
 
-" tab切换、关闭窗口
+" tab切换、关闭窗口、空格滚屏
 map <silent> <leader>h :tabprevious<CR>
 map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>q :q<CR>
-map <silent> <space> <c-e>j
 map <silent> Q :q<CR>
+map <silent> <space> <c-e>j
 
 " 查找文件
 map <silent> <leader>f :action GotoFile<CR>
@@ -28,5 +28,6 @@ command! R action Run
 command! D action Debug
 command! S action Stop
 
-" 重新加载 .ideavimrc
-command! Re source ~/.ideavimrc
+" 修改、重新加载 .ideavimrc
+command! Vimrc edit ~/.ideavimrc
+command! So    source ~/.ideavimrc
