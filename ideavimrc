@@ -35,8 +35,8 @@ command! B action ViewBreakpoints
 
 map <silent> B :action ToggleLineBreakpoint<CR>
 map <silent> D :action StepOver<CR>
-map <silent> ei :action StepInto<CR>
-map <silent> eo :action StepOut<CR>
+map <silent> <leader>i :action StepInto<CR>
+map <silent> <leader>o :action StepOut<CR>
 
 " ideavimrc 修改、重新加载
 command! Vimrc edit ~/.ideavimrc
