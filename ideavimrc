@@ -10,6 +10,7 @@ map <silent> <leader>q :q<CR>
 map <silent> Q :q<CR>
 map <silent> W <c-w>w
 map <silent> <space> <c-e>j
+map <silent> <leader>w :action EditorToggleUseSoftWraps<CR>
 
 " 查找文件
 map <silent> <leader>f :action GotoFile<CR>
@@ -33,10 +34,10 @@ command! D action Debug
 command! S action Stop
 command! B action ViewBreakpoints
 
-map <silent> B :action ToggleLineBreakpoint<CR>
-map <silent> D :action StepOver<CR>
-map <silent> <leader>i :action StepInto<CR>
-map <silent> <leader>o :action StepOut<CR>
+map <silent> <leader>b :action ToggleLineBreakpoint<CR>
+map <silent> <c-s-j> :action StepOver<CR>
+map <silent> <c-s-i> :action StepInto<CR>
+map <silent> <c-s-o> :action StepOut<CR>
 
 " ideavimrc 修改、重新加载
 command! Vimrc edit ~/.ideavimrc
