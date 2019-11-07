@@ -6,6 +6,8 @@ set ignorecase hlsearch incsearch
 " tab切换、关闭窗口、空格滚屏
 map <silent> <leader>h :tabprevious<CR>
 map <silent> <leader>l :tabnext<CR>
+map <silent> <leader>u :action ReopenClosedTab<CR>
+map <silent> <leader>p "0p
 map <silent> <leader>q :q<CR>
 map <silent> Q :q<CR>
 map <silent> W <c-w>w
@@ -35,9 +37,9 @@ command! S action Stop
 command! B action ViewBreakpoints
 
 map <silent> <leader>b :action ToggleLineBreakpoint<CR>
-map <silent> <c-s-j> :action StepOver<CR>
-map <silent> <c-s-i> :action StepInto<CR>
-map <silent> <c-s-o> :action StepOut<CR>
+map <silent> <leader>j :action StepOver<CR>
+map <silent> <leader>i :action StepInto<CR>
+map <silent> <leader>o :action StepOut<CR>
 
 " ideavimrc 修改、重新加载
 command! Vimrc edit ~/.ideavimrc
