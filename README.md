@@ -13,7 +13,7 @@ Replace your .vimrc
 curl https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/vimrc > ~/.vimrc
 ```
 
-### Use method tow
+### Use method two
 
 Git clone and create a symbol.
 ```shell
