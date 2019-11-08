@@ -6,25 +6,24 @@ filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
 let mapleader = "e"
-map <silent> <leader>h :tabprevious<CR>
-map <silent> <leader>l :tabnext<CR>
-map <silent> <leader>i :set paste!<CR>
-map <silent> <leader>I :set list!<CR>
-map <silent> <leader>q :q<CR>
-map <silent> <c-q> :q<CR>
-map <silent> <leader>p "0p
-map <silent> <leader>v :tabnew ~/.vimrc<CR>
-map <silent> <leader>w :set nowrap!<CR>
-map <silent> <space> <c-e>j
-map <silent> <c-j> ]czz
-map <silent> <c-k> [czz
+map <leader>h :tabprevious<CR>
+map <leader>l :tabnext<CR>
+map <leader>i :set paste!<CR>
+map <leader>I :set list!<CR>
+map <leader>q :q<CR>
+map <c-q> :q<CR>
+map <leader>p "0p
+map <leader>w :set nowrap!<CR>
+map <space> <c-e>j
+map <c-j> ]czz
+map <c-k> [czz
 
 " 行尾字符、状态栏、go特殊格式
 set list listchars=tab:>-,trail:.
 set statusline=%F\ %1*%m%*\ %r\ %{&paste?'[PASTE]':''}%=\ (%c,\ %l,\ %p%%)\ %1*\ %L\ %*\ %{toupper(&fenc!=''?&fenc:&enc)}\ [0x%B]
 autocmd BufEnter *.go setlocal noexpandtab tabstop=8 shiftwidth=8 nolist
 
-" 安装 vim-plug
+command! Vimrc tabnew ~/.vimrc
 command! InstallVimPlug :!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin('~/.vim/plugged')
