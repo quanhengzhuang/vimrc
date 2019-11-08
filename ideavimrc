@@ -10,7 +10,7 @@ map <silent> <leader>u :action ReopenClosedTab<CR>
 map <silent> <leader>p "0p
 map <silent> <leader>q :q<CR>
 map <silent> Q :q<CR>
-map <silent> W <c-w>w
+map <silent> <c-q> :q<CR>
 map <silent> <space> <c-e>j
 map <silent> <leader>w :action EditorToggleUseSoftWraps<CR>
 
@@ -30,9 +30,10 @@ map <silent> <leader>t :action ActivateProjectToolWindow<CR>
 map <silent> <leader>n :action HideAllWindows<CR>
 map <silent> <leader>a :action HideActiveWindow<CR>
 
-" 运行、调试
+" 运行、调试、测试
 command! R action Run
 command! D action Debug
+command! T action RunCoverage
 command! S action Stop
 command! B action ViewBreakpoints
 
