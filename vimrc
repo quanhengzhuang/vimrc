@@ -11,15 +11,13 @@ map <silent> <leader>l :tabnext<CR>
 map <silent> <leader>i :set paste!<CR>
 map <silent> <leader>I :set list!<CR>
 map <silent> <leader>q :q<CR>
+map <silent> <c-q> :q<CR>
 map <silent> <leader>p "0p
 map <silent> <leader>v :tabnew ~/.vimrc<CR>
 map <silent> <leader>w :set nowrap!<CR>
 map <silent> <space> <c-e>j
-map <silent> <c-l> <c-w>l
-map <silent> <c-j> <c-w>j
-map <silent> <c-k> <c-w>k
-map <silent> <c-h> <c-w>h
-map <silent> <c-g> ]czz
+map <silent> <c-j> ]czz
+map <silent> <c-k> [czz
 
 " 行尾字符、状态栏、go特殊格式
 set list listchars=tab:>-,trail:.
