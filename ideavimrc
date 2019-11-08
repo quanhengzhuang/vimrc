@@ -4,31 +4,31 @@ let mapleader = "e"
 set ignorecase hlsearch incsearch
 
 " tab切换、关闭窗口、空格滚屏
-map <silent> <leader>h :tabprevious<CR>
-map <silent> <leader>l :tabnext<CR>
-map <silent> <leader>u :action ReopenClosedTab<CR>
-map <silent> <leader>p "0p
-map <silent> <leader>q :q<CR>
-map <silent> Q :q<CR>
-map <silent> <c-q> :q<CR>
-map <silent> <space> <c-e>j
-map <silent> <leader>w :action EditorToggleUseSoftWraps<CR>
+map <leader>h :tabprevious<CR>
+map <leader>l :tabnext<CR>
+map <leader>u :action ReopenClosedTab<CR>
+map <leader>p "0p
+map <leader>q :q<CR>
+map Q :q<CR>
+map <c-q> :q<CR>
+map <space> <c-e>j
+map <leader>w :action EditorToggleUseSoftWraps<CR>
 
 " 查找文件
-map <silent> <leader>f :action GotoFile<CR>
+map <leader>f :action GotoFile<CR>
 command! F action FindInPath
 
 " 跳转到定义、向后跳、向前跳
-map <silent> <leader>e :action GotoDeclaration<CR>
-map <silent> <c-h> :action Back<CR>
-map <silent> <c-l> :action Forward<CR>
+map <leader>e :action GotoDeclaration<CR>
+map <c-h> :action Back<CR>
+map <c-l> :action Forward<CR>
 
 " 打开工具窗口、隐藏窗口
-map <silent> <leader>r :action ActivateRunToolWindow<CR>
-map <silent> <leader>s :action ActivateStructureToolWindow<CR>
-map <silent> <leader>t :action ActivateProjectToolWindow<CR>
-map <silent> <leader>n :action HideAllWindows<CR>
-map <silent> <leader>a :action HideActiveWindow<CR>
+map <leader>r :action ActivateRunToolWindow<CR>
+map <leader>s :action ActivateStructureToolWindow<CR>
+map <leader>t :action ActivateProjectToolWindow<CR>
+map <leader>n :action HideAllWindows<CR>
+map <leader>a :action HideActiveWindow<CR>
 
 " 运行、调试、测试
 command! R action Run
@@ -37,10 +37,10 @@ command! T action RunCoverage
 command! S action Stop
 command! B action ViewBreakpoints
 
-map <silent> <leader>b :action ToggleLineBreakpoint<CR>
-map <silent> <leader>j :action StepOver<CR>
-map <silent> <leader>i :action StepInto<CR>
-map <silent> <leader>o :action StepOut<CR>
+map <leader>b :action ToggleLineBreakpoint<CR>
+map <leader>j :action StepOver<CR>
+map <leader>i :action StepInto<CR>
+map <leader>o :action StepOut<CR>
 
 " ideavimrc 修改、重新加载
 command! Vimrc edit ~/.ideavimrc
