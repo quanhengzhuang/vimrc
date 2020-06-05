@@ -15,8 +15,8 @@ map <c-q> :q<CR>
 map <leader>p "0p
 map <leader>w :set nowrap!<CR>
 map <space> <c-e>j
-map <F7> ]czz
-map <F8> [czz
+map <c-n> ]czz
+map <c-m> [czz
 map <c-h> <c-w>h
 map <c-j> <c-w>j
 map <c-k> <c-w>k
