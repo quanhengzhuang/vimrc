@@ -15,12 +15,15 @@ map <c-q> :q<CR>
 map <leader>p "0p
 map <leader>w :set nowrap!<CR>
 map <space> <c-e>j
-map <c-n> ]czz
-map <c-m> [czz
 map <c-h> <c-w>h
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
+
+if &diff
+    map <c-j> ]czz
+    map <c-k> [czz
+endif
 
 " 行尾字符、状态栏、go特殊格式
 set list listchars=tab:>-,trail:.
