@@ -41,7 +41,7 @@ Plug 'vim-scripts/AutoComplPop'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/Mark'
 Plug 'quanhengzhuang/vim-tabplus'
-Plug 'quanhengzhuang/vim-filefinder'
+Plug 'quanhengzhuang/vim-filefinder' | map <leader>a :FinderFind<CR>
 Plug 'quanhengzhuang/vim-findtags'
 Plug 'quanhengzhuang/vim-hiwords'
 Plug 'quanhengzhuang/vim-sudowriter'
