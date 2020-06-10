@@ -6,8 +6,6 @@ filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
 let mapleader = "e"
-map <leader>h :tabprevious<CR>
-map <leader>l :tabnext<CR>
 map <leader>i :set paste!<CR>
 map <leader>I :set list!<CR>
 map <leader>q :q<CR>
