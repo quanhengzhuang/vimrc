@@ -20,6 +20,9 @@ Git clone and create a symbol.
 git clone git@github.com:quanhengzhuang/vimrc.git
 ln -sf vimrc ~/.vimrc
 ```
+## vimrc for IDEA
+
+https://github.com/quanhengzhuang/vimrc/blob/master/ideavimrc
 
 ## Some Personal Plugins
 
