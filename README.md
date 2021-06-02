@@ -53,3 +53,6 @@ https://github.com/quanhengzhuang/vim-sudowriter
 
 ## vimrc for IDEA
 https://github.com/quanhengzhuang/vimrc/blob/master/ideavimrc
+
+Raw:
+https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/ideavimrc
