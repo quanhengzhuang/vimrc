@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/vimrc > ~/.vi
 
 Git clone and create a symbol.
 ```shell
-git clone git@github.com:quanhengzhuang/vimrc.git
+git clone https://github.com/quanhengzhuang/vimrc.git
 ln -sf vimrc ~/.vimrc
 ```
 ## vimrc for IDEA
