@@ -20,9 +20,9 @@ Git clone and create a symbol.
 git clone https://github.com/quanhengzhuang/vimrc.git
 ln -sf vimrc ~/.vimrc
 ```
-## vimrc for IDEA
 
-https://github.com/quanhengzhuang/vimrc/blob/master/ideavimrc
+### Install vim-plug
+https://github.com/junegunn/vim-plug
 
 ## Some Personal Plugins
 
@@ -49,3 +49,7 @@ https://github.com/quanhengzhuang/vim-autobackup
 `SudoWriter` is used to save the current file with root privileges.
 
 https://github.com/quanhengzhuang/vim-sudowriter
+
+
+## vimrc for IDEA
+https://github.com/quanhengzhuang/vimrc/blob/master/ideavimrc
