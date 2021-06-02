@@ -22,11 +22,13 @@ ln -sf vimrc ~/.vimrc
 ```
 
 ### Install vim-plug
-https://github.com/junegunn/vim-plug
+Use the following command to install `vim-plug` (https://github.com/junegunn/vim-plug):
+> :InstallVimPlug
 
+Use the following command to install the specified plugins:
 > :PlugInstall
 
-## Some Personal Plugins
+## Specified Plugins
 
 `FileFinder` is used to find and manage files based on the system's find command more quickly.
 
@@ -53,7 +55,7 @@ https://github.com/quanhengzhuang/vim-autobackup
 https://github.com/quanhengzhuang/vim-sudowriter
 
 
-## vimrc for IDEA
+## Vimrc for IDEA
 https://github.com/quanhengzhuang/vimrc/blob/master/ideavimrc
 
 Raw:
