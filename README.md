@@ -24,6 +24,8 @@ ln -sf vimrc ~/.vimrc
 ### Install vim-plug
 https://github.com/junegunn/vim-plug
 
+> :PlugInstall
+
 ## Some Personal Plugins
 
 `FileFinder` is used to find and manage files based on the system's find command more quickly.
