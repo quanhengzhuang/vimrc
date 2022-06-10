@@ -1,7 +1,7 @@
 " 基本设置
 set number showcmd ruler nobackup fileencodings=utf-8,gbk laststatus=2
 set autoindent expandtab tabstop=4 shiftwidth=4
-set ignorecase hlsearch incsearch
+set ignorecase hlsearch incsearch nocursorline
 filetype plugin on | syntax on | color torte
 
 " leader 快捷键定义
