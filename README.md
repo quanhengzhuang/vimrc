@@ -6,14 +6,14 @@ https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/vimrc
 
 ## Usage
 
-### Use method one
+### Usage 1
 
 Replace your .vimrc
 ``` shell
 curl https://raw.githubusercontent.com/quanhengzhuang/vimrc/master/vimrc > ~/.vimrc
 ```
 
-### Use method two
+### Usage 2
 
 Git clone and create a symbol.
 ```shell
