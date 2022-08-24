@@ -22,10 +22,10 @@ ln -sf vimrc ~/.vimrc
 ```
 
 ### Install vim-plug
-Use the following command to install `vim-plug` (https://github.com/junegunn/vim-plug):
+1. Use the following command to install `vim-plug` (https://github.com/junegunn/vim-plug):
 > :InstallVimPlug
 
-Use the following command to install the specified plugins:
+2. Use the following command to install the specified plugins:
 > :PlugInstall
 
 ## Specified Plugins
